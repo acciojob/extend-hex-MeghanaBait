@@ -4,14 +4,14 @@ const extendHex = (shortHex) => {
 	let iscapital=false;
 	let ans = "#";
 	while(i < shortHex.length){
-		let code= shortHex[i].chatCodeAt(0);
+		let code= shortHex[i].charCodeAt(0);
 		if(code >= 65 &&code <=90){
 			iscapital=true;
 		}
 		ans += shortHex[i]+shortHex[i];
 		i++;
 	}
-	return iscapital ? ans.toUpperCase() : ans;
+	return isCapital ? ans.toUpperCase() : ans;
 };
 
 // Do not change the code below.
